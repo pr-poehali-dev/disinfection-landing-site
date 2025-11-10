@@ -17,9 +17,12 @@ const Index = () => {
             <a href="#advantages" className="text-gray-700 hover:text-primary transition-colors">Преимущества</a>
             <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Контакты</a>
           </nav>
-          <Button className="bg-accent hover:bg-accent/90">
-            Заказать звонок
-          </Button>
+          <a href="https://wa.me/79658871904" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-accent hover:bg-accent/90 flex items-center gap-2">
+              <Icon name="MessageCircle" size={20} />
+              WhatsApp
+            </Button>
+          </a>
         </div>
       </header>
 
@@ -595,14 +598,10 @@ const Index = () => {
                 Оставьте заявку и получите бесплатную консультацию специалиста в течение 15 минут
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
-                <div className="flex items-center gap-2">
-                  <Icon name="Phone" size={20} />
-                  <span className="text-lg">+7 (999) 123-45-67</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Icon name="Mail" size={20} />
-                  <span className="text-lg">info@sanexpert.ru</span>
-                </div>
+                <a href="https://wa.me/79658871904" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-accent transition-colors">
+                  <Icon name="MessageCircle" size={20} />
+                  <span className="text-lg">+7 (965) 887-19-04</span>
+                </a>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
@@ -616,6 +615,27 @@ const Index = () => {
             </div>
             <Card className="p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Заказать обработку</h3>
+              <div className="mb-6">
+                <a 
+                  href="https://wa.me/79658871904?text=Здравствуйте! Хочу заказать обработку" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-full"
+                >
+                  <Button className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white text-lg py-6 flex items-center justify-center gap-3">
+                    <Icon name="MessageCircle" size={24} />
+                    Написать в WhatsApp
+                  </Button>
+                </a>
+              </div>
+              <div className="relative mb-6">
+                <div className="absolute inset-0 flex items-center">
+                  <div className="w-full border-t border-gray-300"></div>
+                </div>
+                <div className="relative flex justify-center text-sm">
+                  <span className="px-4 bg-white text-gray-500">или заполните форму</span>
+                </div>
+              </div>
               <form className="space-y-4">
                 <div>
                   <input 
@@ -649,7 +669,7 @@ const Index = () => {
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
                   />
                 </div>
-                <Button className="w-full bg-accent hover:bg-accent/90 text-lg py-6">
+                <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-lg py-6">
                   Отправить заявку
                 </Button>
                 <p className="text-xs text-gray-500 text-center">
@@ -660,6 +680,16 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <a 
+        href="https://wa.me/79658871904?text=Здравствуйте! Хочу заказать обработку" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#20BD5A] text-white p-4 rounded-full shadow-2xl z-50 transition-all hover:scale-110 flex items-center justify-center group"
+        aria-label="Написать в WhatsApp"
+      >
+        <Icon name="MessageCircle" size={28} className="group-hover:animate-pulse" />
+      </a>
 
       <footer className="bg-gray-900 text-white py-12 px-4">
         <div className="container mx-auto">
@@ -686,8 +716,11 @@ const Index = () => {
             <div>
               <h4 className="font-bold text-lg mb-4">Контакты</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>+7 (999) 123-45-67</li>
-                <li>info@sanexpert.ru</li>
+                <li>
+                  <a href="https://wa.me/79658871904" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                    +7 (965) 887-19-04
+                  </a>
+                </li>
                 <li>Работаем 24/7</li>
               </ul>
             </div>
