@@ -18,7 +18,7 @@ const Index = () => {
             <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Контакты</a>
           </nav>
           <a href="https://wa.me/79658871904" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-accent hover:bg-accent/90 flex items-center gap-2">
+            <Button className="bg-[#25D366] hover:bg-[#20BD5A] text-white flex items-center gap-2">
               <Icon name="MessageCircle" size={20} />
               WhatsApp
             </Button>
