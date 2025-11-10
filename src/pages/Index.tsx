@@ -30,28 +30,28 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 Профессиональная санитарная обработка
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8">
                 Используем современный генератор холодного тумана для максимально эффективной дезинфекции помещений
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-base sm:text-lg px-6 sm:px-8">
                   Заказать обработку
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8">
+                <Button size="lg" variant="outline" className="text-base sm:text-lg px-6 sm:px-8">
                   Узнать цены
                 </Button>
               </div>
               <div className="mt-8 flex gap-8">
                 <div>
-                  <div className="text-3xl font-bold text-primary">500+</div>
-                  <div className="text-gray-600">объектов обработано</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-primary">500+</div>
+                  <div className="text-sm sm:text-base text-gray-600">объектов обработано</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-primary">24/7</div>
-                  <div className="text-gray-600">работаем круглосуточно</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-primary">24/7</div>
+                  <div className="text-sm sm:text-base text-gray-600">работаем круглосуточно</div>
                 </div>
               </div>
             </div>
@@ -61,7 +61,7 @@ const Index = () => {
                 alt="Профессиональная дезинфекция"
                 className="rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
+              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white p-4 sm:p-6 rounded-xl shadow-xl max-w-[80%] sm:max-w-none">
                 <div className="flex items-center gap-3">
                   <div className="bg-primary/10 p-3 rounded-lg">
                     <Icon name="CheckCircle2" className="text-primary" size={24} />
@@ -80,8 +80,8 @@ const Index = () => {
       <section id="services" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Наши услуги</h2>
-            <p className="text-xl text-gray-600">Комплексные решения для защиты вашего помещения</p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Наши услуги</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">Комплексные решения для защиты вашего помещения</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -94,7 +94,7 @@ const Index = () => {
               <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                 <Icon name="Droplets" className="text-primary" size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Дезинфекция</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-4">Дезинфекция</h3>
               <p className="text-gray-600 mb-4">
                 Уничтожение вирусов, бактерий и микроорганизмов с помощью генератора холодного тумана
               </p>
@@ -257,8 +257,8 @@ const Index = () => {
               />
             </div>
             <div>
-              <h2 className="text-4xl font-bold mb-6">Генератор холодного тумана</h2>
-              <p className="text-xl text-gray-600 mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Генератор холодного тумана</h2>
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6">
                 Современное оборудование для профессиональной дезинфекции. Мелкодисперсное распыление обеспечивает проникновение во все труднодоступные места.
               </p>
               <div className="space-y-4">
@@ -267,7 +267,7 @@ const Index = () => {
                     <Icon name="Zap" className="text-primary" size={24} />
                   </div>
                   <div>
-                    <div className="font-bold text-lg mb-1">Быстрая обработка</div>
+                    <div className="font-bold text-base sm:text-lg mb-1">Быстрая обработка</div>
                     <div className="text-gray-600">Полная дезинфекция помещения за 30-60 минут</div>
                   </div>
                 </div>
@@ -276,7 +276,7 @@ const Index = () => {
                     <Icon name="Target" className="text-primary" size={24} />
                   </div>
                   <div>
-                    <div className="font-bold text-lg mb-1">100% охват</div>
+                    <div className="font-bold text-base sm:text-lg mb-1">100% охват</div>
                     <div className="text-gray-600">Обработка всех поверхностей, включая труднодоступные места</div>
                   </div>
                 </div>
@@ -285,7 +285,7 @@ const Index = () => {
                     <Icon name="Leaf" className="text-primary" size={24} />
                   </div>
                   <div>
-                    <div className="font-bold text-lg mb-1">Безопасные средства</div>
+                    <div className="font-bold text-base sm:text-lg mb-1">Безопасные средства</div>
                     <div className="text-gray-600">Сертифицированные препараты без вреда для здоровья</div>
                   </div>
                 </div>
@@ -607,7 +607,7 @@ const Index = () => {
                 <div className="flex items-start gap-4">
                   <Icon name="Gift" className="text-accent" size={32} />
                   <div>
-                    <div className="font-bold text-lg mb-1">Специальное предложение</div>
+                    <div className="font-bold text-base sm:text-lg mb-1">Специальное предложение</div>
                     <div className="text-white/90">При заказе комплексной обработки скидка 30% + бесплатная профилактика через месяц</div>
                   </div>
                 </div>
