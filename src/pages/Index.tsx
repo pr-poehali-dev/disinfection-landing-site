@@ -13,6 +13,7 @@ const Index = () => {
           </div>
           <nav className="hidden md:flex gap-8">
             <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Услуги</a>
+            <a href="#prices" className="text-gray-700 hover:text-primary transition-colors">Цены</a>
             <a href="#advantages" className="text-gray-700 hover:text-primary transition-colors">Преимущества</a>
             <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Контакты</a>
           </nav>
@@ -81,7 +82,12 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-primary">
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-primary overflow-hidden">
+              <img 
+                src="https://cdn.poehali.dev/projects/d2e39b80-86e8-4f25-a125-4c70791c9e3f/files/1d1e8e2e-1843-4957-bdb4-b8e99379d424.jpg" 
+                alt="Дезинфекция" 
+                className="w-full h-48 object-cover rounded-lg mb-6"
+              />
               <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                 <Icon name="Droplets" className="text-primary" size={32} />
               </div>
@@ -105,7 +111,12 @@ const Index = () => {
               </ul>
             </Card>
 
-            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-primary">
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-primary overflow-hidden">
+              <img 
+                src="https://cdn.poehali.dev/projects/d2e39b80-86e8-4f25-a125-4c70791c9e3f/files/a48b81e8-ee5f-4939-a9e2-7a4d14b24588.jpg" 
+                alt="Озонация" 
+                className="w-full h-48 object-cover rounded-lg mb-6"
+              />
               <div className="bg-accent/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                 <Icon name="Wind" className="text-accent" size={32} />
               </div>
@@ -129,7 +140,12 @@ const Index = () => {
               </ul>
             </Card>
 
-            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-primary">
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-primary overflow-hidden">
+              <img 
+                src="https://cdn.poehali.dev/projects/d2e39b80-86e8-4f25-a125-4c70791c9e3f/files/226cc946-0ddc-4ebf-9211-c1030bda3532.jpg" 
+                alt="Дезинсекция" 
+                className="w-full h-48 object-cover rounded-lg mb-6"
+              />
               <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                 <Icon name="Bug" className="text-primary" size={32} />
               </div>
@@ -153,7 +169,12 @@ const Index = () => {
               </ul>
             </Card>
 
-            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-accent">
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-accent overflow-hidden">
+              <img 
+                src="https://cdn.poehali.dev/projects/d2e39b80-86e8-4f25-a125-4c70791c9e3f/files/ac556098-a7a9-455c-87c6-1afc509c2c9f.jpg" 
+                alt="Дератизация" 
+                className="w-full h-48 object-cover rounded-lg mb-6"
+              />
               <div className="bg-accent/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                 <Icon name="Rat" className="text-accent" size={32} />
               </div>
@@ -177,7 +198,12 @@ const Index = () => {
               </ul>
             </Card>
 
-            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-primary">
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-primary overflow-hidden">
+              <img 
+                src="https://cdn.poehali.dev/projects/d2e39b80-86e8-4f25-a125-4c70791c9e3f/files/d3bfc433-944f-4fc4-a578-6c261d629171.jpg" 
+                alt="Обработка от плесени" 
+                className="w-full h-48 object-cover rounded-lg mb-6"
+              />
               <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                 <Icon name="Waves" className="text-primary" size={32} />
               </div>
@@ -259,6 +285,209 @@ const Index = () => {
                     <div className="font-bold text-lg mb-1">Безопасные средства</div>
                     <div className="text-gray-600">Сертифицированные препараты без вреда для здоровья</div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="prices" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Прозрачные цены</h2>
+            <p className="text-xl text-gray-600">Стоимость услуг зависит от площади помещения</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-primary/10 p-3 rounded-lg">
+                  <Icon name="Droplets" className="text-primary" size={28} />
+                </div>
+                <h3 className="text-2xl font-bold">Дезинфекция</h3>
+              </div>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">до 50 м²</span>
+                  <span className="font-bold text-lg">от 2 500 ₽</span>
+                </div>
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">50-100 м²</span>
+                  <span className="font-bold text-lg">от 4 500 ₽</span>
+                </div>
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">100-200 м²</span>
+                  <span className="font-bold text-lg">от 7 500 ₽</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600">более 200 м²</span>
+                  <span className="font-bold text-lg">договорная</span>
+                </div>
+              </div>
+              <Button className="w-full mt-6 bg-primary hover:bg-primary/90">
+                Заказать
+              </Button>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-accent/10 p-3 rounded-lg">
+                  <Icon name="Wind" className="text-accent" size={28} />
+                </div>
+                <h3 className="text-2xl font-bold">Озонация</h3>
+              </div>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">до 50 м²</span>
+                  <span className="font-bold text-lg">от 2 000 ₽</span>
+                </div>
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">50-100 м²</span>
+                  <span className="font-bold text-lg">от 3 500 ₽</span>
+                </div>
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">100-200 м²</span>
+                  <span className="font-bold text-lg">от 6 000 ₽</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600">более 200 м²</span>
+                  <span className="font-bold text-lg">договорная</span>
+                </div>
+              </div>
+              <Button className="w-full mt-6 bg-accent hover:bg-accent/90">
+                Заказать
+              </Button>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-primary/10 p-3 rounded-lg">
+                  <Icon name="Bug" className="text-primary" size={28} />
+                </div>
+                <h3 className="text-2xl font-bold">Дезинсекция</h3>
+              </div>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">1-комнатная</span>
+                  <span className="font-bold text-lg">от 2 800 ₽</span>
+                </div>
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">2-комнатная</span>
+                  <span className="font-bold text-lg">от 3 500 ₽</span>
+                </div>
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">3-комнатная</span>
+                  <span className="font-bold text-lg">от 4 500 ₽</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600">Офис/склад</span>
+                  <span className="font-bold text-lg">от 5 000 ₽</span>
+                </div>
+              </div>
+              <Button className="w-full mt-6 bg-primary hover:bg-primary/90">
+                Заказать
+              </Button>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-accent/10 p-3 rounded-lg">
+                  <Icon name="Rat" className="text-accent" size={28} />
+                </div>
+                <h3 className="text-2xl font-bold">Дератизация</h3>
+              </div>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">1-комнатная</span>
+                  <span className="font-bold text-lg">от 3 000 ₽</span>
+                </div>
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">2-комнатная</span>
+                  <span className="font-bold text-lg">от 4 000 ₽</span>
+                </div>
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">3-комнатная</span>
+                  <span className="font-bold text-lg">от 5 000 ₽</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600">Частный дом</span>
+                  <span className="font-bold text-lg">от 6 500 ₽</span>
+                </div>
+              </div>
+              <Button className="w-full mt-6 bg-accent hover:bg-accent/90">
+                Заказать
+              </Button>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-primary/10 p-3 rounded-lg">
+                  <Icon name="Waves" className="text-primary" size={28} />
+                </div>
+                <h3 className="text-2xl font-bold">От плесени</h3>
+              </div>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">1 стена</span>
+                  <span className="font-bold text-lg">от 2 000 ₽</span>
+                </div>
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">Ванная комната</span>
+                  <span className="font-bold text-lg">от 3 500 ₽</span>
+                </div>
+                <div className="flex justify-between items-center pb-3 border-b">
+                  <span className="text-gray-600">Вся квартира</span>
+                  <span className="font-bold text-lg">от 5 500 ₽</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600">Подвал/погреб</span>
+                  <span className="font-bold text-lg">от 4 000 ₽</span>
+                </div>
+              </div>
+              <Button className="w-full mt-6 bg-primary hover:bg-primary/90">
+                Заказать
+              </Button>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2 border-accent bg-gradient-to-br from-accent/5 to-primary/5">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-accent/10 p-3 rounded-lg">
+                  <Icon name="Sparkles" className="text-accent" size={28} />
+                </div>
+                <h3 className="text-2xl font-bold">Комплекс</h3>
+              </div>
+              <div className="bg-accent/10 rounded-xl p-4 mb-6">
+                <div className="text-3xl font-bold text-accent mb-1">-30%</div>
+                <div className="text-sm text-gray-700">При заказе 3+ услуг</div>
+              </div>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center gap-2 text-gray-700">
+                  <Icon name="Check" className="text-accent" size={18} />
+                  <span>Дезинфекция + Озонация</span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-700">
+                  <Icon name="Check" className="text-accent" size={18} />
+                  <span>Дезинсекция + Дератизация</span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-700">
+                  <Icon name="Check" className="text-accent" size={18} />
+                  <span>Обработка от плесени</span>
+                </div>
+              </div>
+              <Button className="w-full bg-accent hover:bg-accent/90">
+                Получить расчет
+              </Button>
+            </Card>
+          </div>
+
+          <div className="mt-12 text-center">
+            <div className="bg-primary/5 rounded-2xl p-8 inline-block">
+              <div className="flex items-center gap-4">
+                <Icon name="Info" className="text-primary" size={32} />
+                <div className="text-left">
+                  <div className="font-bold text-lg mb-1">Бесплатный выезд специалиста</div>
+                  <div className="text-gray-600">Точный расчет стоимости после осмотра объекта</div>
                 </div>
               </div>
             </div>
